@@ -19,7 +19,7 @@ facedetect=cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')
 
 with open('data/names.pkl', 'rb') as w:
     LABELS=pickle.load(w)
-with open('data/faces.pkl', 'rb') as f:
+with open('data/faces_data.pkl', 'rb') as f:
     FACES=pickle.load(f)
 
 print('Shape of Faces matrix --> ', FACES.shape)
